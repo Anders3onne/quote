@@ -8,25 +8,52 @@ import { Quote } from "../quote";
 })
 export class QuoteComponent implements OnInit {
   quotes = [
-    new Quote(1, "It always seems impossible until its done","A good head and a good heart are always a formidable combination",new Date(2018,3,14)),
-    new Quote(2, "It always seems impossible until its done","A good head and a good heart are always a formidable combination",new Date(2018,3,14)),
-    new Quote(3, "It always seems impossible until its done","A good head and a good heart are always a formidable combination",new Date(2018,3,14)),
-    new Quote(4, "It always seems impossible until its done","A good head and a good heart are always a formidable combination",new Date(2018,3,14)),
-    new Quote(5, "It always seems impossible until its done","A good head and a good heart are always a formidable combination",new Date(2018,3,14)),
-    new Quote(6, "It always seems impossible until its done","A good head and a good heart are always a formidable combination", new Date(2018,3,14))
-  ]
-  completequote(isComplete,index){
-    if (isComplete){
-        this.quotes.splice(index,1);
-        }
-        }
+    new Quote(
+      1,
+      "It always seems impossible until its done",
+      "A good head and a good heart are always a formidable combination",
+      new Date(2018, 3, 14)
+    ),
+    new Quote(
+      2,
+      "It always seems impossible until its done",
+      "A good head and a good heart are always a formidable combination",
+      new Date(2018, 3, 14)
+    ),
+    new Quote(
+      3,
+      "It always seems impossible until its done",
+      "A good head and a good heart are always a formidable combination",
+      new Date(2018, 3, 14)
+    ),
+    new Quote(
+      4,
+      "It always seems impossible until its done",
+      "A good head and a good heart are always a formidable combination",
+      new Date(2018, 3, 14)
+    ),
+    new Quote(
+      5,
+      "It always seems impossible until its done",
+      "A good head and a good heart are always a formidable combination",
+      new Date(2018, 3, 14)
+    ),
+    new Quote(
+      6,
+      "It always seems impossible until its done",
+      "A good head and a good heart are always a formidable combination",
+      new Date(2018, 3, 14)
+    )
+  ];
+  deleteQuote(isComplete, index) {
+    if (isComplete) {
+      let toDelete = confirm(
+        `Are you sure you want to delete ${this.quotes[index].name}`
+      );
 
-  toogleDetails(index){
-    this.quotes[index].showDescription = !this.quotes[index].showDescription;
-}
-
-  constructor() {}
-
-  ngOnInit() {}
-}
+      if (toDelete) {
+        this.quotes.splice(index, 1);
+      }
+    }
+  }
 }
