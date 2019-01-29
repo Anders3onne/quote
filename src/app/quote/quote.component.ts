@@ -16,7 +16,7 @@ export class QuoteComponent implements OnInit {
     ),
     new Quote(
       2,
-      "It always seems impossible until its done",
+      "The greatest glory in living lies not in never falling, but in rising every time we fall.",
       "A good head and a good heart are always a formidable combination",
       new Date(2018, 3, 14)
     ),
