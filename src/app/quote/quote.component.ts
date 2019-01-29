@@ -45,6 +45,13 @@ export class QuoteComponent implements OnInit {
       new Date(2018, 3, 14)
     )
   ];
+
+  addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    quote.completeDate = new Date(quote.completeDate);
+    this.quotes.push(quote);
+  }
   deleteQuote(isComplete, index) {
     if (isComplete) {
       let toDelete = confirm(
