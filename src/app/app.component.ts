@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { Quote } from "./quote";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html"
 })
 export class AppComponent {
-  title = 'quote';
+  goals = [
+    new Quote(1, "It always seems impossible until its done"),
+    new Quote(2, "It always seems impossible until its done"),
+    new Quote(3, "It always seems impossible until its done"),
+    new Quote(4, "It always seems impossible until its done"),
+    new Quote(5, "It always seems impossible until its done"),
+    new Quote(6, "It always seems impossible until its done")
+  ];
 }
