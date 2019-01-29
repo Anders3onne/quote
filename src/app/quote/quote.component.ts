@@ -63,4 +63,5 @@ export class QuoteComponent implements OnInit {
       }
     }
   }
+  ngOnInit() {}
 }
