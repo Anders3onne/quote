@@ -1,7 +1,7 @@
 <div class="andu">
   <p>{{quote.author}}</p>
   <p>{{quote.description}}</p>
-  <p>This quote was posted in {{quote.completeDate|dateCount}} days</p>
+  <p>This quote was posted {{quote.completeDate|dateCount}} days</p>
   <p>{{upvote}}</p>
   <p>{{downvote}}</p>
   <button class="deleteq" (click)='quoteDelete(true)'> Delete </button>
