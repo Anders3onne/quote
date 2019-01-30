@@ -8,7 +8,7 @@
     <ul>
       <div *ngFor="let quote of quotes; let i = index">
         <div>
-          <li id="{{ i }}" appStrikethrough>
+          <li id="{{i}}" appStrikethrough>
             {{ quote.name }} posted the {{ quote.completeDate | date | uppercase }}
           </li>
           <br />
@@ -17,7 +17,7 @@
           </p>
         </div>
         <div *ngIf="quote.showDescription">
-          <app-quote-details [quote]="quote" (isComplete)="deletequote($event, i)"></app-quote-details>
+          <app-quote-details [quote]="quote" (isComplete)="deleteQuote($event, i)"></app-quote-details>
         </div>
       </div>
     </ul>

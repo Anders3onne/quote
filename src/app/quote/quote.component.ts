@@ -9,40 +9,40 @@ import { Quote } from "../quote";
 export class QuoteComponent implements OnInit {
   quotes = [
     new Quote(
-      1,
+      "Liliane",
       "It always seems impossible until its done",
       "A good head and a good heart are always a formidable combination",
-      new Date(2018, 3, 14)
+      new Date(2019, 1, 14)
     ),
     new Quote(
-      2,
-      "The greatest glory in living lies not in never falling, but in rising every time we fall.",
-      "A good head and a good heart are always a formidable combination",
-      new Date(2018, 3, 14)
+      " Rose",
+      "The greatest glory in living lies not in never falling, but in rising every time we fall",
+      "For to be free is not merely to cast off one's chains, but to live in a way that respects and enhances the freedom of others",
+      new Date(2019, 1, 14)
     ),
     new Quote(
-      3,
-      "It always seems impossible until its done",
-      "A good head and a good heart are always a formidable combination",
-      new Date(2018, 3, 14)
+      "Eleanor",
+      "After climbing a great hill, one only finds that there are many more hills to climb.",
+      "And as we let our own light shine, we unconsciously give other people permission to do the same",
+      new Date(2019, 1, 14)
     ),
     new Quote(
-      4,
-      "It always seems impossible until its done",
+      " Divine",
+      "There is no passion to be found playing small - in settling for a life that is less than the one you are capable of living",
       "A good head and a good heart are always a formidable combination",
-      new Date(2018, 3, 14)
+      new Date(2019, 1, 14)
     ),
     new Quote(
-      5,
-      "It always seems impossible until its done",
+      "Omega",
+      "And as we let our own light shine, we unconsciously give other people permission to do the same",
       "A good head and a good heart are always a formidable combination",
-      new Date(2018, 3, 14)
+      new Date(2019, 1, 14)
     ),
     new Quote(
-      6,
-      "It always seems impossible until its done",
-      "A good head and a good heart are always a formidable combination",
-      new Date(2018, 3, 14)
+      "Robyn",
+      "I can hear the roar of women's silence",
+      "he who feeds you, controls you",
+      new Date(2019, 1, 10)
     )
   ];
   deleteQuote(isComplete, index) {
@@ -58,9 +58,9 @@ export class QuoteComponent implements OnInit {
   }
 
   addNewQuote(quote) {
-    let quoteLength = this.quotes.length;
-    quote.id = quoteLength + 1;
-    quote.completeDate = new Date(quote.completeDate);
+    // let quoteLength = this.quotes.length;
+    // quote.id = quoteLength + 1;
+    // quote.completeDate = new Date(quote.completeDate);
     this.quotes.push(quote);
   }
 
