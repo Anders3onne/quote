@@ -37,7 +37,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - TS
 - ANGULAR CLI
 
-##Support
+## Support
 
 If you need further info or any help: uwinezaandersonne@gmail.com
 
