@@ -6,7 +6,7 @@ import { Quote } from "./quote";
   templateUrl: "./app.component.html"
 })
 export class AppComponent {
-  title = "Mandela Quotes";
+  title = "Mandela  Life Belief";
   quotes = [
     new Quote(
       1,

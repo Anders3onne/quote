@@ -9,9 +9,19 @@ export class QuoteDetailsComponent implements OnInit {
   @Input() quote: Quote;
   @Output() isComplete = new EventEmitter<boolean>();
 
-  quoteComplete(complete: boolean) {
+  quoteDelete(complete: boolean) {
     this.isComplete.emit(complete);
   }
+
+  public upvote: number = 0;
+  like(upvote) {
+    this.upvote += 1;
+  }
+  public downvote: number = 0;
+  dislike(downvote) {
+    this.downvote += 1;
+  }
+
   constructor() {}
 
   ngOnInit() {}
