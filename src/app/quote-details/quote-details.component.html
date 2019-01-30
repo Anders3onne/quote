@@ -1,3 +1,10 @@
-<p>{{quote.description}}</p>
-<p>This quote was posted in {{quote.completeDate|dateCount}} days</p>
-<button class="btn btn-danger" (click)='quoteDelete(true)'> Delete </button>
+<div class="andu">
+  <p>{{quote.author}}</p>
+  <p>{{quote.description}}</p>
+  <p>This quote was posted in {{quote.completeDate|dateCount}} days</p>
+  <p>{{upvote}}</p>
+  <p>{{downvote}}</p>
+  <button class="deleteq" (click)='quoteDelete(true)'> Delete </button>
+  <button id="two" (click)='like($event)'>Upvote</button>
+  <button id="three" (click)='dislike($event)'>Downvote</button>
+</div>

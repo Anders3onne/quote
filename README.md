@@ -4,6 +4,8 @@ Author Uwineza Adolatha
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
 
+## Website
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.or `http://localhost:4000/` The app will automatically reload if you change any of the source files.
@@ -35,6 +37,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - TS
 - ANGULAR CLI
 
+##Support
+
+If you need further info or any help: uwinezaandersonne@gmail.com
+
 ## License
 
--
+MIT License Copyright© 2019 Uwineza Adolatha.
