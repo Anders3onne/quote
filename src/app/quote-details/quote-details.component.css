@@ -1,20 +1,20 @@
 .deleteq {
-  color: snow;
-  background-color: teal;
+  color: black;
+  background-color: white;
 }
 
-.mamie {
+.andu {
   border: black;
   background-color: grey;
-  width: 700px;
+  width: 500px;
 }
 
 #two {
-  background-color: teal;
-  color: snow;
+  background-color: greenyellow;
+  color: whitesmoke;
 }
 
 #three {
-  background-color: teal;
-  color: snow;
+  background-color: greenyellow;
+  color: whitesmoke;
 }
